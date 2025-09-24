@@ -1,0 +1,79 @@
+/* week02/styles/temple.css */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  color: #222;
+  background-color: #ffffff;
+  line-height: 1.5;
+}
+
+/* centre le contenu principal et limite la largeur */
+main {
+  max-width: 900px;
+  margin: 1.5rem auto;
+  padding: 0 1rem;
+}
+
+/* en-tête */
+header {
+  background-color: steelblue;
+  color: #fff;
+  padding: 1rem 0;
+  text-align: center;
+}
+header p {
+  margin: 0;
+  font-weight: 600;
+}
+
+/* titre principal */
+h1 {
+  color: steelblue;
+  margin-top: 0.75rem;
+}
+
+/* image responsive */
+picture img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 1rem auto;
+  border-radius: 8px;
+  border: 3px solid steelblue;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.08);
+}
+
+/* sections */
+section {
+  background-color: #f4f4f4;
+  padding: 1rem;
+  border-radius: 6px;
+  margin-top: 1rem;
+}
+
+/* liste */
+ul {
+  margin: 0.5rem 0 0 1.25rem;
+}
+
+/* liens */
+a {
+  color: steelblue;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* pied de page */
+footer {
+  background-color: steelblue;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 1.5rem;
+}
