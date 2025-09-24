@@ -12,20 +12,40 @@
     <meta name="author" content="Kazadi Athanase Muamba">
 
     <!-- Link to CSS -->
-    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="week03/styles/styles.css">
 </head>
 
 <body>
+    <header>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">W1</a>
+            <a href="#">W2</a>
+            <a href="#">W3</a>
+            <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+            <a href="https://facebook.com" target="_blank">Facebook</a>
+        </nav>
+    </header>
+
     <main>
         <h1>Welcome to WDD 130</h1>
-        <p>This page will become your homepage for the course. You will remove this text and replace it with your own
-            personal details.</p>
+        <p>Hello! My name is Kazadi Athanase Muamba. This page is my personal homepage for the WDD 130 course.</p>
 
-        <img src="images/salt-lake-temple.jpg" alt="The Salt Lake Temple">
+        <!-- Profile image floated right -->
+        <img src="images/salt-lake-temple.jpg" alt="The Salt Lake Temple" class="profile">
+
+        <ul class="box">
+            <li><a href="https://www.churchofjesuschrist.org/temples/details/salt-lake-temple?lang=eng"
+                    target="_blank">Salt Lake Temple</a></li>
+            <li><a href="https://www.churchofjesuschrist.org/temples/details/accra-ghana-temple?lang=eng"
+                    target="_blank">Accra Ghana Temple</a></li>
+            <li><a href="https://www.churchofjesuschrist.org/temples/details/kinshasa-democratic-republic-of-the-congo-temple?lang=eng"
+                    target="_blank">Kinshasa DR Congo Temple</a></li>
+        </ul>
     </main>
 
-    <aside>
-        <h2>Ivory Coast</h2>
+    <aside class="box">
+        <h2 class="overlay">Ivory Coast</h2>
         <img src="week02/images/abidjan-ivory-coast.jpeg" alt="Abidjan, Ivory Coast Temple">
         <p>Ivory Coast is a country in West Africa with rich culture and beautiful landscapes.</p>
     </aside>
