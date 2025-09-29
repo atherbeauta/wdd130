@@ -1,9 +1,9 @@
 /* CSS for White Water Rafting Site */
 
 :root {
-  --primary-color: #004e89;
-  --accent1-color: #f25f5c;
-  --accent2-color: #70c1b3;
+  --primary-color: #008929;
+  --accent1-color: hsl(267, 86%, 23%);
+  --accent2-color: hsl(0, 86%, 40%);
   --heading-font: Arial, Helvetica, sans-serif;
   --body-font: "Trebuchet MS", Verdana, sans-serif;
 }
@@ -17,7 +17,7 @@
 body {
   font-family: var(--body-font);
   color: var(--accent1-color);
-  background-color: #fff;
+  background-color: #ffffff;
 }
 
 header, main, footer {
