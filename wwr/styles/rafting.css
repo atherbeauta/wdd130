@@ -75,3 +75,9 @@ nav, p, section, article {
   width: 125px;
   margin-left: 12px;
 }
+
+header nav a {
+  color: var(--primary-color); /* ou une couleur visible */
+  text-decoration: underline;  /* montre que c'est un lien */
+  margin-right: 12px;          /* espace entre les liens */
+}
