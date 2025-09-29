@@ -2,16 +2,16 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>WDD 130 | Personal Homepage</title>
 
-    <!-- Meta tags for SEO and author -->
-    <meta name="description"
-        content="Kazadi Athanase Muamba WDD 130 personal homepage, showing personal details and course work.">
+    <!-- Required meta tags (after title, before CSS link) -->
+    <meta name="description" content="Kazadi Athanase Muamba — WDD 130 personal homepage, portfolio and course work.">
     <meta name="author" content="Kazadi Athanase Muamba">
 
-    <!-- Link to CSS -->
+    <!-- Link to the week03 styles (if this index is in repo root and styles folder is week03/styles,
+       adjust to the correct relative path in your repo) -->
     <link rel="stylesheet" href="week03/styles/styles.css">
 </head>
 
@@ -22,32 +22,38 @@
             <a href="#">W1</a>
             <a href="#">W2</a>
             <a href="#">W3</a>
-            <a href="https://linkedin.com" target="_blank">LinkedIn</a>
-            <a href="https://facebook.com" target="_blank">Facebook</a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="https://facebook.com" target="_blank" rel="noopener">Facebook</a>
         </nav>
     </header>
 
     <main>
         <h1>Welcome to WDD 130</h1>
-        <p>Hello! My name is Kazadi Athanase Muamba. This page is my personal homepage for the WDD 130 course.</p>
 
-        <!-- Profile image floated right -->
+        <!-- PERSONAL DESCRIPTION: replace with your own short paragraph -->
+        <p>Hi — I'm Kazadi Athanase Muamba. I'm studying web fundamentals in WDD 130. I enjoy building simple web pages
+            and learning HTML & CSS.</p>
+
+        <!-- Main (profile/temple) image — path must match actual location in repo -->
         <img src="images/salt-lake-temple.jpg" alt="The Salt Lake Temple" class="profile">
 
+        <!-- Unordered list of favorite temples (each link opens in new tab) -->
         <ul class="box">
-            <li><a href="https://www.churchofjesuschrist.org/temples/details/salt-lake-temple?lang=eng"
-                    target="_blank">Salt Lake Temple</a></li>
+            <li><a href="https://www.churchofjesuschrist.org/temples/details/salt-lake-temple?lang=eng" target="_blank"
+                    rel="noopener">Salt Lake Temple</a></li>
             <li><a href="https://www.churchofjesuschrist.org/temples/details/accra-ghana-temple?lang=eng"
-                    target="_blank">Accra Ghana Temple</a></li>
+                    target="_blank" rel="noopener">Accra Ghana Temple</a></li>
             <li><a href="https://www.churchofjesuschrist.org/temples/details/kinshasa-democratic-republic-of-the-congo-temple?lang=eng"
-                    target="_blank">Kinshasa DR Congo Temple</a></li>
+                    target="_blank" rel="noopener">Kinshasa DR Congo Temple</a></li>
         </ul>
     </main>
 
+    <!-- aside must be after main and before footer -->
     <aside class="box">
         <h2 class="overlay">Ivory Coast</h2>
+        <!-- If this file is in week02/images, use "../week02/images/..." or "week02/images/..." depending on index location -->
         <img src="week02/images/abidjan-ivory-coast.jpeg" alt="Abidjan, Ivory Coast Temple">
-        <p>Ivory Coast is a country in West Africa with rich culture and beautiful landscapes.</p>
+        <p>Ivory Coast is a country in West Africa known for its rich culture and beautiful landscapes.</p>
     </aside>
 
     <footer>
