@@ -1,33 +1,29 @@
+/* Global Variables */
 :root {
-  --primary-color: #004e89;
-  --accent1-color: #f25f5c;
-  --accent2-color: #70c1b3;
-  --heading-font: Arial, Helvetica, sans-serif;
-  --body-font: "Trebuchet MS", Verdana, sans-serif;
+  --primary-color: #003366;
+  --accent1-color: #ff6600;
+  --heading-font: 'Arial', sans-serif;
+  --body-font: 'Verdana', sans-serif;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
+/* Body */
 body {
   font-family: var(--body-font);
-  color: var(--primary-color);
-  background-color: #fff;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-color: #ffffff;
+  color: #333333;
 }
 
-header, .grid, footer {
-  max-width: 840px;
-  margin: 0 auto;
-}
-
+/* Navigation */
 nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
   margin: 16px 0;
+  background-color: #f0f0f0;
+  padding: 8px 0;
 }
 
 nav a {
@@ -37,38 +33,54 @@ nav a {
   color: var(--primary-color);
 }
 
-h1 {
+/* Main */
+main {
+  max-width: 840px;
+  padding: 12px;
+  margin: 0 auto;
+}
+
+main h1 {
   border-bottom: 2px solid var(--accent1-color);
   padding-bottom: 8px;
   font-family: var(--heading-font);
+  color: var(--primary-color);
 }
 
-h2 {
-  font-family: var(--heading-font);
-  color: var(--accent1-color);
+main img {
+  width: 150px;
+  height: auto;
+  border: 2px solid #ccc;
+  padding: 4px;
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.2);
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: 200px 1fr; /* aside à gauche, main à droite */
-  gap: 16px;
-  margin-top: 16px;
+p {
+  padding: 0;
 }
 
+/* Aside */
 aside {
-  grid-row: 1; /* s'assure que aside commence en haut */
+  width: 300px;
+  margin: 16px auto;
+  border: 1px solid #ccc;
+  padding: 12px;
   background-color: #f0f0f0;
-  padding: 12px;
+  color: #000000;
 }
 
-main {
-  padding: 12px;
+aside img {
+  width: 200px;
+  height: auto;
+  display: block;
+  margin: 8px 0;
 }
 
+/* Footer */
 footer {
+  max-width: 840px;
+  margin: 32px auto 0 auto;
+  border-top: 2px solid var(--accent1-color);
   text-align: center;
-  padding: 12px 0;
-  background-color: var(--accent2-color);
-  color: #fff;
-  margin-top: 24px;
+  padding-top: 8px;
 }
