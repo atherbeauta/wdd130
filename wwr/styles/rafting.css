@@ -2,7 +2,7 @@
   --primary:hsl(138, 100%, 27%);
   --accent:#cd0e0b;
   --muted:#1ab7cc;
-  --text:#850683;
+  --text:hsl(133, 91%, 41%);
   --maxw:840px;
   --body-font: "Trebuchet MS", Verdana, sans-serif;
   --heading-font: Arial, Helvetica, sans-serif;
