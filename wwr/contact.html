@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -22,79 +22,79 @@
     </header>
 
     <main>
-        <div class="contact-info">
-            <h1>White Water Rafting Company</h1>
-            <p>123 River Street, Anytown, California</p>
-            <p>Phone: 123-456-7890</p>
-            <p>Email: <a href="mailto:info@whitewater.com">info@whitewater.com</a></p>
-            <div class="map">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d250065.5582148409!2d27.337373541339794!3d-11.674958853210152!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19723ea34874cbd9%3A0xa1c6f5a74f805b2f!2sLubumbashi!5e0!3m2!1sen!2scd!4v1760101882463!5m2!1sen!2scd"
-                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade" title="Emplacement de notre entreprise">
-                </iframe>
+        <div class="main-grid">
+            <div class="contact-info">
+                <h1>White Water Rafting Company</h1>
+                <p>Avenue Kasaï, Lubumbashi, Haut-Katanga, DRC</p>
+                <p>Phone: <a href="tel:+243842402381">+243 84 240 2381</a></p>
+                <p>Email: <a href="mailto:atherbeauta@rafting.com">atherbeauta@rafting.com</a></p>
+                <div class="map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d250065.5582148409!2d27.337373541339794!3d-11.674958853210152!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19723ea34874cbd9%3A0xa1c6f5a74f805b2f!2sLubumbashi!5e0!3m2!1sen!2scd!4v1760101882463!5m2!1sen!2scd"
+                        width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade" title="Our Company Location in Lubumbashi">
+                    </iframe>
+                </div>
             </div>
+
+            <form action="thanks.html" method="post" class="contact-form">
+                <h2>Get in Touch</h2>
+
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname" required>
+
+                <label for="useremail">Email:</label>
+                <input type="email" id="useremail" name="useremail" required>
+
+                <fieldset>
+                    <legend>Purpose of Message</legend>
+                    <label><input type="radio" name="purpose" value="inquiry" required> General Inquiry</label>
+                    <label><input type="radio" name="purpose" value="reservation"> Reservation Question</label>
+                    <label><input type="radio" name="purpose" value="suggestion"> Website Suggestion</label>
+                </fieldset>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5"></textarea>
+
+                <label class="newsletter-checkbox">
+                    <input type="checkbox" name="newsletter" value="yes">
+                    Please subscribe me to the monthly newsletter
+                </label>
+
+                <button type="submit">Get in Touch</button>
+            </form>
         </div>
 
         <section class="employee-profiles">
             <h2>We Are Here to Serve You</h2>
             <div class="profiles-container">
                 <figure>
-                    <img src="images/employee1.jpg" alt="Photo de profil de John Doe">
+                    <img src="images/employee1.jpg" alt="Profile photo of John Doe">
                     <figcaption>John Doe - Lead Guide</figcaption>
                 </figure>
                 <figure>
-                    <img src="images/employee2.jpg" alt="Photo de profil de Jane Smith">
+                    <img src="images/employee2.jpg" alt="Profile photo of Jane Smith">
                     <figcaption>Jane Smith - Customer Service</figcaption>
                 </figure>
                 <figure>
-                    <img src="images/happy_client.jpg" alt="Photo de profil de Peter Jones">
+                    <img src="images/happy_client.jpg" alt="Profile photo of Peter Jones">
                     <figcaption>Peter Jones - Operations Manager</figcaption>
                 </figure>
             </div>
         </section>
-
-        <form action="merci.html" method="post">
-            <h2>Get in Touch</h2>
-            <fieldset>
-                <legend>Contact Information</legend>
-                <label for="fullname">Full Name:</label>
-                <input type="text" id="fullname" name="fullname">
-
-                <label for="useremail">Email:</label>
-                <input type="email" id="useremail" name="useremail">
-            </fieldset>
-
-            <fieldset>
-                <legend>Purpose of Message</legend>
-                <label><input type="radio" name="purpose" value="inquiry" required> General Inquiry</label>
-                <label><input type="radio" name="purpose" value="reservation"> Reservation Question</label>
-                <label><input type="radio" name="purpose" value="suggestion"> Website Suggestion</label>
-            </fieldset>
-
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="5"></textarea>
-
-            <label>
-                <input type="checkbox" name="newsletter" value="yes">
-                Please subscribe me to the monthly newsletter
-            </label>
-
-            <button type="submit">Send Message</button>
-        </form>
     </main>
 
     <footer>
         <p>©2025 🌴 White Water Rafting 🌴 Athanase Muamba Kazadi</p>
         <nav class="sociallinks">
             <a href="https://facebook.com">
-                <img src="images/facebook.png" alt="Lien vers notre page Facebook">
+                <img src="images/facebook.png" alt="Link to our Facebook page">
             </a>
             <a href="https://twitter.com">
-                <img src="images/twitter.png" alt="Lien vers notre page Twitter">
+                <img src="images/twitter.png" alt="Link to our Twitter page">
             </a>
             <a href="https://instagram.com">
-                <img src="images/instagram.png" alt="Lien vers notre page Instagram">
+                <img src="images/instagram.png" alt="Link to our Instagram page">
             </a>
         </nav>
     </footer>

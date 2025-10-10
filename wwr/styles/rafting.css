@@ -1,9 +1,110 @@
-/* --- Styles for Contact Us Page --- */
+/* --- Main Layout (Grid for Map + Form section) --- */
 
-/* Employee Profiles Section */
+/* This container creates the two-column layout from the wireframe */
+.main-grid {
+    display: grid;
+    /* Grid columns: Map on the left (40%) and Form on the right (60%) */
+    grid-template-columns: 2fr 3fr; 
+    gap: 40px;
+    padding: 20px 5%; /* Margin on the sides */
+    align-items: start;
+}
+
+/* Styles for the contact info container */
+.contact-info {
+    text-align: center;
+    padding: 20px;
+}
+
+.map {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 100%; 
+    height: 400px;
+}
+
+.map iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px; 
+}
+
+/* --- Form Styling to match the screenshot --- */
+.contact-form {
+    padding: 30px;
+    background-color: #f7f7f7; /* Light background color for the box */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h2 {
+    text-align: center;
+    color: #2a9d8f;
+    margin-bottom: 25px;
+}
+
+/* Alignment for labels and inputs */
+.contact-form label:not(.newsletter-checkbox) {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #dcdcdc;
+    border-radius: 5px;
+    box-sizing: border-box; 
+    margin-bottom: 15px;
+}
+
+/* Radio Button Styling (Purpose of Message) */
+.contact-form fieldset {
+    border: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.contact-form legend {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.contact-form fieldset label {
+    display: flex; /* Use Flexbox to align input and text */
+    align-items: center;
+    font-weight: normal;
+    margin-bottom: 5px;
+}
+
+.contact-form input[type="radio"],
+.contact-form input[type="checkbox"] {
+    margin-right: 8px; 
+    width: auto; 
+}
+
+/* Submit Button */
+.contact-form button {
+    width: 100%;
+    padding: 15px;
+    background-color: #e76f51; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+/* --- Employee Profiles Styles --- */
 .employee-profiles {
     text-align: center;
-    margin: 40px 0;
+    padding: 40px 5%;
+    grid-column: 1 / -1; /* Ensures this section spans the full width below the grid */
 }
 
 .profiles-container {
@@ -11,18 +112,15 @@
     justify-content: space-around;
     flex-wrap: wrap;
     gap: 20px;
-}
-
-.profiles-container figure {
-    margin: 0;
+    margin-top: 20px;
 }
 
 .profiles-container img {
     width: 150px;
     height: 150px;
-    border-radius: 50%; /* Makes the image circular */
+    border-radius: 50%; /* Circular image */
     object-fit: cover;
-    border: 3px solid #264653; /* Using a color from a common theme */
+    border: 3px solid #264653; 
 }
 
 .profiles-container figcaption {
@@ -31,81 +129,10 @@
     color: #2a9d8f;
 }
 
-/* Contact Information & Map */
-.contact-info {
-    text-align: center;
-    padding: 20px;
-    border-bottom: 2px solid #ccc;
-}
-
-.map iframe {
-    width: 100%;
-    border: none;
-    margin-top: 20px;
-}
-
-/* Form Styling */
-form {
-    width: 100%;
-    max-width: 600px; /* Limit form width for readability */
-    margin: 40px auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    background-color: #f9f9f9;
-}
-
-form h2 {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-form fieldset {
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    margin-bottom: 20px;
-    padding: 15px;
-}
-
-form legend {
-    font-weight: bold;
-    padding: 0 10px;
-}
-
-form label {
-    display: block;
-    margin-bottom: 8px;
-    font-weight: 500;
-}
-
-form input[type="text"],
-form input[type="email"],
-form textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    margin-bottom: 15px;
-}
-
-form input[type="radio"],
-form input[type="checkbox"] {
-    margin-right: 10px;
-}
-
-form button {
-    display: block;
-    width: 100%;
-    padding: 12px;
-    background-color: #e76f51; /* Button color */
-    color: white;
-    border: none;
-    border-radius: 5px;
-    font-size: 1.1em;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-form button:hover {
-    background-color: #f4a261;
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .main-grid {
+        /* Single column layout on smaller screens */
+        grid-template-columns: 1fr;
+    }
 }
