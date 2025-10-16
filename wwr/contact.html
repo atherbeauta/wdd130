@@ -1,13 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-us">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>Contact Us | White Water Rafting</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Contact Us - White Water Rafting Company</title>
     <meta name="description"
-        content="Contact White Water Rafting for your next adventure. Address, phone, and contact form included.">
-    <meta name="author" content="Athanase Muamba Kazadi">
+        content="Contact the White Water Rafting Company for inquiries, reservations, or website suggestions.">
+
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
 
@@ -23,83 +24,90 @@
     </header>
 
     <main>
-        <div class="main-grid">
-            <div class="contact-info">
+        <section class="contact-info-section">
+            <div class="company-details">
                 <h1>White Water Rafting Company</h1>
-                <p>Avenue Kasaï, Lubumbashi, Haut-Katanga, DRC</p>
-                <p>Phone: <a href="tel:+243842402381">+243 84 240 2381</a></p>
-                <p>Email: <a href="mailto:atherbeauta@rafting.com">atherbeauta@rafting.com</a></p>
-
-                <div class="map">
-                    <iframe src="https://maps.google.com/maps?q=Lubumbashi&t=&z=13&ie=UTF8&iwloc=&output=embed"
-                        height="400" style="border:0; width: 100%;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade" title="Our Company Location in Lubumbashi">
-                    </iframe>
-                </div>
+                <p>345 Radem Kampemba </p>
+                <p>Lubumbashi, Democratic Republic of Congo</p>
+                <p>+243842402381</p>
+                <p>atherbeauta@whitewater.com</p>
             </div>
 
-            <form action="thanks.html" method="post" class="contact-form">
-                <h2>Get in Touch</h2>
+            <div class="contact-grid">
 
-                <label for="fullname">Full Name:</label>
-                <input type="text" id="fullname" name="fullname" required>
+                <div class="map-and-details">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d125032.60628932969!2d27.5021916!3d-11.6753421!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19723ea34874cbd9%3A0xa1c6f5a74f805b2f!2sLubumbashi!5e0!3m2!1sen!2scd!4v1760639019884!5m2!1sen!2scd"
+                        width="600" height="450" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
 
-                <label for="useremail">Email:</label>
-                <input type="email" id="useremail" name="useremail" required>
+                <div class="contact-form-container">
+                    <form class="contact-form">
+                        <label for="user_name">Name:</label>
+                        <input type="text" id="user_name" name="user_name" required placeholder="John Doe">
 
-                <fieldset>
-                    <legend>Purpose of Message</legend>
-                    <label><input type="radio" name="purpose" value="inquiry" required> General Inquiry</label>
-                    <label><input type="radio" name="purpose" value="reservation"> Reservation Question</label>
-                    <label><input type="radio" name="purpose" value="suggestion"> Website Suggestion</label>
-                </fieldset>
+                        <label for="user_email">Email:</label>
+                        <input type="email" id="user_email" name="user_email" required placeholder="name@example.com">
 
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="5"></textarea>
+                        <label>Message Purpose:</label>
+                        <div class="radio-group">
+                            <input type="radio" id="inquiry" name="message_purpose" value="General Inquiry" required>
+                            <label for="inquiry">General Inquiry</label><br>
 
-                <label class="newsletter-checkbox">
-                    <input type="checkbox" name="newsletter" value="yes">
-                    Please subscribe me to the monthly newsletter
-                </label>
+                            <input type="radio" id="reservation" name="message_purpose" value="Reservation Question">
+                            <label for="reservation">Reservation Question</label><br>
 
-                <button type="submit">Get in Touch</button>
-            </form>
-        </div>
+                            <input type="radio" id="suggestion" name="message_purpose" value="Website Suggestion">
+                            <label for="suggestion">Website Suggestion</label>
+                        </div>
+
+                        <label for="message_text">Message:</label>
+                        <textarea id="message_text" name="message_text" rows="4" required
+                            placeholder="Type your message here"></textarea>
+
+                        <div class="newsletter-checkbox">
+                            <input type="checkbox" id="newsletter_signup" name="newsletter_signup">
+                            <label for="newsletter_signup">Please Subscribe Me to the monthly newsletter</label>
+                        </div>
+
+                        <button type="submit">Get in Touch!</button>
+                    </form>
+                </div>
+            </div>
+        </section>
 
         <section class="employee-profiles">
             <h2>We Are Here to Serve You</h2>
-            <div class="profiles-container">
+            <div class="employee-grid">
                 <figure>
-                    <img src="images/employee1.jpg" alt="Profile photo of John Doe">
-                    <figcaption>John Doe - Lead Guide</figcaption>
+                    <img src="images/employee1.jpg" alt="Employee Profile 1" loading="lazy">
+                    <figcaption>Mike Johnson - CEO</figcaption>
                 </figure>
                 <figure>
-                    <img src="images/employee2.jpg" alt="Profile photo of Jane Smith">
-                    <figcaption>Jane Smith - Customer Service</figcaption>
+                    <img src="images/employee2.jpg" alt="Employee Profile 2" loading="lazy">
+                    <figcaption>Sarah Lee - Lead Guide</figcaption>
                 </figure>
                 <figure>
-                    <img src="images/happy_client.jpg" alt="Profile photo of Peter Jones">
-                    <figcaption>Peter Jones - Operations Manager</figcaption>
+                    <img src="images/employee3.jpg" alt="Employee Profile 3" loading="lazy">
+                    <figcaption>Atherbeauta - Web Designer</figcaption>
                 </figure>
             </div>
         </section>
     </main>
 
     <footer>
-        <p>©2025 🌴 White Water Rafting 🌴 Athanase Muamba Kazadi</p>
-        <div class="contact-footer-info">
-            <p>Email: atherbeauta@rafting.com</p>
-            <p>Phone: +243 84 240 2381</p>
-        </div>
+        <p>©2025 - White Water Rafting - Atherbeauta</p>
+        <p><a href="site-plan.html">Site Plan</a></p>
         <nav class="sociallinks">
-            <a href="https://www.facebook.com/atherbeauta" target="_blank">
-                <img src="images/facebook.png" alt="Link to our Facebook page">
+            <a href="https://facebook.com">
+                <img src="images/facebook.png" alt="Facebook">
             </a>
-            <a href="http://www.linkedin.com/in/athanase-kazadi-muamba-1b44ba339" target="_blank">
-                <img src="images/linkedin.png" alt="Link to Athanase Kazadi Muamba's LinkedIn profile">
+            <a href="https://twitter.com">
+                <img src="images/twitter.png" alt="Twitter">
             </a>
-            <a href="https://instagram.com" target="_blank">
-                <img src="images/instagram.png" alt="Link to our Instagram page">
+            <a href="https://instagram.com">
+                <img src="images/instagram.png" alt="Instagram">
             </a>
         </nav>
     </footer>
