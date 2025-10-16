@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Contact Us | White Water Rafting</title>
+    <meta name="description"
+        content="Contact White Water Rafting for your next adventure. Address, phone, and contact form included.">
+    <meta name="author" content="Athanase Muamba Kazadi">
+    <link rel="stylesheet" href="styles/rafting.css">
+</head>
+
+<body>
+    <header>
+        <img src="images/logo.png" alt="Rafting Site Logo">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="main-grid">
+            <div class="contact-info">
+                <h1>White Water Rafting Company</h1>
+                <p>Avenue Kasaï, Lubumbashi, Haut-Katanga, DRC</p>
+                <p>Phone: <a href="tel:+243842402381">+243 84 240 2381</a></p>
+                <p>Email: <a href="mailto:atherbeauta@rafting.com">atherbeauta@rafting.com</a></p>
+
+                <div class="map">
+                    <iframe src="https://maps.google.com/maps?q=Lubumbashi&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                        height="400" style="border:0; width: 100%;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade" title="Our Company Location in Lubumbashi">
+                    </iframe>
+                </div>
+            </div>
+
+            <form action="thanks.html" method="post" class="contact-form">
+                <h2>Get in Touch</h2>
+
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname" required>
+
+                <label for="useremail">Email:</label>
+                <input type="email" id="useremail" name="useremail" required>
+
+                <fieldset>
+                    <legend>Purpose of Message</legend>
+                    <label><input type="radio" name="purpose" value="inquiry" required> General Inquiry</label>
+                    <label><input type="radio" name="purpose" value="reservation"> Reservation Question</label>
+                    <label><input type="radio" name="purpose" value="suggestion"> Website Suggestion</label>
+                </fieldset>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5"></textarea>
+
+                <label class="newsletter-checkbox">
+                    <input type="checkbox" name="newsletter" value="yes">
+                    Please subscribe me to the monthly newsletter
+                </label>
+
+                <button type="submit">Get in Touch</button>
+            </form>
+        </div>
+
+        <section class="employee-profiles">
+            <h2>We Are Here to Serve You</h2>
+            <div class="profiles-container">
+                <figure>
+                    <img src="images/employee1.jpg" alt="Profile photo of John Doe">
+                    <figcaption>John Doe - Lead Guide</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/employee2.jpg" alt="Profile photo of Jane Smith">
+                    <figcaption>Jane Smith - Customer Service</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/happy_client.jpg" alt="Profile photo of Peter Jones">
+                    <figcaption>Peter Jones - Operations Manager</figcaption>
+                </figure>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>©2025 🌴 White Water Rafting 🌴 Athanase Muamba Kazadi</p>
+        <div class="contact-footer-info">
+            <p>Email: atherbeauta@rafting.com</p>
+            <p>Phone: +243 84 240 2381</p>
+        </div>
+        <nav class="sociallinks">
+            <a href="https://www.facebook.com/atherbeauta" target="_blank">
+                <img src="images/facebook.png" alt="Link to our Facebook page">
+            </a>
+            <a href="http://www.linkedin.com/in/athanase-kazadi-muamba-1b44ba339" target="_blank">
+                <img src="images/linkedin.png" alt="Link to Athanase Kazadi Muamba's LinkedIn profile">
+            </a>
+            <a href="https://instagram.com" target="_blank">
+                <img src="images/instagram.png" alt="Link to our Instagram page">
+            </a>
+        </nav>
+    </footer>
+</body>
+
+</html>
