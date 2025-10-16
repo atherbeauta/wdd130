@@ -1,12 +1,336 @@
+/* WDD 130 - Rafting Project Stylesheet */
+
 /* ========================================================= */
-/* --- COLOR VARIABLES (Sea Blue Theme) --- */
+/* --- 1. COLOR VARIABLES & GENERAL STYLES --- */
 /* ========================================================= */
 :root {
-    --primary-color: #004D60; /* Deep Sea Blue */
-    --secondary-color: #69B3D7; /* Light Sky Blue */
-    --accent1-color: #FF7F50; /* Bright Orange/Coral for CTAs */
-    --accent2-color: #F8F8FF; /* Off-White / Light Gray */
-    --heading-color: #004D60; 
+    /* Deep Sea Blue / Dark Cyan (Primary color for structure/water theme) */
+    --primary-color: #004D60; 
+    
+    /* Light Sky Blue (Secondary color for accents or light elements) */
+    --secondary-color: #69B3D7; 
+    
+    /* Bright Orange/Coral (Accent color for CTAs, adventure, and action) */
+    --accent1-color: #FF7F50; 
+    
+    /* Off-White / Light Gray (For light backgrounds) */
+    --accent2-color: #F8F8FF; 
+
+    /* Text colors */
+    --heading-color: var(--primary-color); 
     --paragraph-color: #333333; 
 }
-/* ... le reste du CSS suit ... */
+
+body {
+    font-family: Arial, sans-serif;
+    color: var(--paragraph-color);
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3 {
+    color: var(--heading-color);
+}
+
+/* Header, Footer, and Navigation (Common Content - W06/W05) */
+header {
+    display: grid;
+    grid-template-columns: 150px auto; /* Logo and Nav */
+    align-items: center;
+    background-color: var(--primary-color);
+    padding: 1rem 2%;
+}
+
+header img {
+    width: 100px;
+}
+
+nav a {
+    color: var(--accent2-color);
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: var(--secondary-color);
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+    padding: 1rem 2%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer a {
+    color: var(--accent2-color);
+    text-decoration: none;
+}
+
+.sociallinks img {
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+    filter: invert(100%); /* Makes social icons white */
+}
+
+
+/* ========================================================= */
+/* --- 2. INDEX.HTML STYLES (Criterion 11 & 12) --- */
+/* ========================================================= */
+
+/* Hero Section (Criterion 7 & 8) */
+.hero {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+/* Home Page Grid Content (Criterion 11 & 12) */
+.home-grid {
+    display: grid;
+    /* Example: Two large columns for main content sections */
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); 
+    gap: 3rem;
+    padding: 3rem 5%;
+}
+
+.newsletter-form-container, .call-to-action-container {
+    padding: 1rem;
+    border: 1px solid var(--secondary-color);
+    border-radius: 8px;
+}
+
+/* Newsletter Styles (Criterion 9) */
+.newsletter-form {
+    display: grid;
+    gap: 10px;
+}
+
+.newsletter-form button {
+    background-color: var(--accent1-color);
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* ========================================================= */
+/* --- 3. TRIPS.HTML STYLES (Criterion 16 & 17) --- */
+/* ========================================================= */
+
+/* Trip Cards Layout (Criterion 17) */
+.trip-grid {
+    display: grid;
+    /* Create responsive columns for trip cards */
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); 
+    gap: 30px;
+    padding: 2rem 5%;
+}
+
+.trip-card {
+    border: 1px solid var(--secondary-color);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+.trip-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover; 
+}
+
+/* Trip Table Styles (Criterion 16) */
+.trips-table-container {
+    padding: 2rem 5%;
+    overflow-x: auto; 
+}
+
+.trips-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 1em;
+}
+
+.trips-table th, .trips-table td {
+    padding: 12px 15px;
+    border: 1px solid var(--secondary-color);
+    text-align: left;
+}
+
+.trips-table th {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+/* ========================================================= */
+/* --- 4. ABOUT.HTML STYLES --- */
+/* ========================================================= */
+
+.about-hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 20px;
+    align-items: center;
+    padding: 2rem 5%;
+}
+
+.about-hero img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.about-grid {
+    display: grid;
+    /* For "History" or "Mission" content boxes */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    gap: 40px;
+    padding: 2rem 5%;
+    text-align: center;
+}
+
+/* ========================================================= */
+/* --- 5. CONTACT.HTML STYLES (W05 Finalized Styles) --- */
+/* ========================================================= */
+
+.contact-info-section {
+    padding: 2rem 5%;
+}
+
+.company-details {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* Two-Column Layout (Criterion 3 - Grid Layout) */
+.contact-grid {
+    display: grid;
+    /* Map and Form side-by-side */
+    grid-template-columns: 1fr 1fr; 
+    gap: 3rem;
+    align-items: start;
+    margin-bottom: 3rem;
+}
+
+/* Final Alignment Fix (Ensures perfect alignment of the map) */
+.map-and-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; 
+}
+
+.contact-grid iframe {
+    /* Forces map to use 100% of the grid column space */
+    width: 100%; 
+    max-width: 100%; 
+    height: 450px; 
+}
+
+/* Form Styles (Criterion 8) */
+.contact-form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 2rem;
+    border: 1px solid var(--secondary-color);
+    border-radius: 5px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid var(--primary-color);
+    border-radius: 4px;
+}
+
+.radio-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.newsletter-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.contact-form button[type="submit"] {
+    /* Apply Accent Color for CTA (Criterion 8) */
+    background-color: var(--accent1-color); 
+    color: white;
+    padding: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+
+/* Employee Profiles Layout (Criterion 9) */
+.employee-profiles {
+    text-align: center;
+    padding: 2rem 5%;
+    background-color: var(--accent2-color); 
+}
+
+.employee-grid {
+    display: grid;
+    /* Three columns for profiles */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.employee-grid img {
+    /* Consistent size and shape for profiles */
+    width: 100%; 
+    max-width: 200px;
+    height: 200px; 
+    border-radius: 50%; 
+    object-fit: cover;
+    margin-bottom: 0.5rem;
+    border: 5px solid var(--secondary-color);
+}
+
+/* ========================================================= */
+/* --- 6. MEDIA QUERIES (Responsiveness) --- */
+/* ========================================================= */
+
+@media (max-width: 900px) {
+    /* Apply single column layout for Contact/About on smaller screens */
+    .contact-grid, .about-hero {
+        grid-template-columns: 1fr; 
+    }
+}
